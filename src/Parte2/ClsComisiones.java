@@ -16,11 +16,11 @@ public class ClsComisiones {
     private static String[][] comisiones = new String [3][6];
     
     
-    public static void  cargaInformacion(int fila){//declaramos un parmetro fila 
+    public static void  cargaInformacion(int fila){
         
         Scanner t = new Scanner(System.in);
         System.out.println("Ingres Nombre"+ fila);
-        comisiones[fila][NOMBRE] = t.nextLine();//nexline para leer cadenas
+        comisiones[fila][NOMBRE] = t.nextLine();
         System.out.println("Ingrese Enero");
         comisiones[fila][ENERO] = t.nextLine();
         System.out.println("Ingrese Febrero");
@@ -39,7 +39,7 @@ public class ClsComisiones {
             //total[3]=total[3]+Integer.parseInt(comisiones[x][MARZO]);
         //}System.out.println("el total es" +total );
     //}
-     public static void imprimeDecorado(String[][] ma) {//darle formato
+     public static void imprimeDecorado(String[][] ma) {
         for (int x = 0; x < ma.length; x++) {
             System.out.print("|");
             for (int y = 0; y < ma[x].length; y++) {
